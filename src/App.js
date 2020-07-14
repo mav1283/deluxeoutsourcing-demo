@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './stylesheets/styles.scss';
+import Header from './components/layout/header/Header';
+import Main from './components/layout/body/Main';
+import Footer from './components/layout/footer/Footer';
+/* Pages */
+import Home from './components/pages/Home';
+import WhyOffshore from './components/pages/WhyOffShore';
+import HowItWorks from './components/pages/HowItWorks';
+import BuildYourTeam from './components/pages/BuildYourTeam';
+import Learn from './components/pages/Learn';
+import Careers from './components/pages/Careers';
+import ContactUs from './components/pages/ContactUs';
+import AboutUs from './components/pages/AboutUs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <Header />
+        <Main>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/why-offshore' component={WhyOffshore} />
+            <Route path='/how-it-works' component={HowItWorks} />
+            <Route path='/build-your-team' component={BuildYourTeam} />
+            <Route path='/learn' component={Learn} />
+            <Route path='/careers' component={Careers} />
+            <Route path='/about-us' component={AboutUs} />
+            <Route path='/contact-us' component={ContactUs} />
+          </Switch>
+        </Main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
