@@ -1,0 +1,26 @@
+.hero{
+    @include grid-container(1em);
+    @include uniform-sides-padded-container(4rem);
+    background-color: var(--grey-800);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: #fff;
+    min-height: 100px;
+    justify-content: flex-start;
+    .hero-text-details{
+        @include grid-container(1em);
+        max-width: 60ch;
+        h1{
+            font-weight: 300;
+            font-size: 3rem;
+        }
+        h3{
+            @extend .green-highlight;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+    }
+    .hero-cta-btn{
+        @extend .green-bg;
+    }
+}

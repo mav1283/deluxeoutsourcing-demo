@@ -1,8 +1,13 @@
 .app-logo{
-    @include two-sides-padded-container(1em,1.5em);
+    @include two-sides-padded-container(2em,1.5em);
     text-transform: uppercase;
     color: var(--grey-800);
+    a{
+        font-size: 1.5rem;
+        
+    }
+    font-weight: 300;
     span{
-        font-weight: 600;
+        font-weight: 800;
     }
 }

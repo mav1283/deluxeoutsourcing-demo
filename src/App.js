@@ -6,7 +6,7 @@ import Main from './components/layout/body/Main';
 import Footer from './components/layout/footer/Footer';
 /* Pages */
 import Home from './components/pages/Home';
-import WhyOffshore from './components/pages/WhyOffShore';
+import WhyDeluxe from './components/pages/WhyDeluxe';
 import HowItWorks from './components/pages/HowItWorks';
 import BuildYourTeam from './components/pages/BuildYourTeam';
 import Learn from './components/pages/Learn';
@@ -22,7 +22,7 @@ function App() {
         <Main>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/why-offshore' component={WhyOffshore} />
+            <Route path='/why-deluxe' component={WhyDeluxe} />
             <Route path='/how-it-works' component={HowItWorks} />
             <Route path='/build-your-team' component={BuildYourTeam} />
             <Route path='/learn' component={Learn} />

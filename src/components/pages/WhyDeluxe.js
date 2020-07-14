@@ -1,8 +1,8 @@
 import React from 'react';
 // import Template1 from '../layout/page_templates/Template1';
 
-function WhyOffShore() {
-  return <div>Why Offshore</div>;
+function WhyDeluxe() {
+  return <div>Why Deluxe</div>;
 }
 
-export default WhyOffShore;
+export default WhyDeluxe;

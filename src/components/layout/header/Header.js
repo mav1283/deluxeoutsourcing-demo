@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className='app-header'>
       <div className='head-top-section'>
-        <p>09173663417</p>
+        <p>Philippines: +6323431000</p>
       </div>
       <div className='head-bottom-section'>
         <Logo />

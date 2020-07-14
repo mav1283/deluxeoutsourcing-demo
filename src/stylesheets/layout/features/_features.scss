@@ -1,0 +1,24 @@
+.features{
+    @include grid-container(0);
+    grid-template-columns: repeat(3,1fr);
+    div.feature{
+        @extend .flex;
+        @include uniform-sides-padded-container(4rem);
+
+        &:nth-child(2){
+            @include border-left(1px, solid,var(--trans-dark-3));
+            @include border-right(1px, solid,var(--trans-dark-3));
+        }
+        .feature-icon{
+            @extend .green-highlight;
+            padding-right: 0.5em;
+            font-size: 3rem;
+        }
+        .feature-details{
+            @include grid-container(1em);
+        }
+        .feature-cta{
+            @extend .green-highlight;
+        }
+    }
+}

@@ -10,7 +10,7 @@
     }
   }
   .head-bottom-section {
-    @include grid_container(1em);
+    @include grid_container(0);
     grid-template-columns: auto 1fr;
   }
 }

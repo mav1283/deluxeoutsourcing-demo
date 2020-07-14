@@ -56,6 +56,16 @@
   border-bottom: $size $type $color;
 }
 
+@mixin border-left($size, $type, $color) {
+  border-left: $size $type $color;
+  
+}
+
+@mixin border-right($size, $type, $color) {
+  border-right: $size $type $color;
+  
+}
+
 @mixin text-shadow($x, $y, $z, $color) {
   text-shadow: $x $y $z $color;
   -webkit-text-shadow: $x $y $z $color;
