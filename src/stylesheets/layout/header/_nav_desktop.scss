@@ -1,0 +1,12 @@
+.app-nav{
+    @extend .flex;
+    justify-content: flex-end;
+    a{
+        @include two-sides-padded-container(1em,1.5em);
+        text-align: center;
+        &:last-child{
+            @extend .green-bg;
+        }
+    }
+}
+
