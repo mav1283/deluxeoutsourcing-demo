@@ -1,0 +1,16 @@
+.app-header {
+  .head-top-section {
+    @extend .flex;
+    justify-content: flex-end;
+    @include uniform-sides-padded-container(0.5em);
+    background-color: #333;
+    p {
+      color: #fff;
+      text-align: right;
+    }
+  }
+  .head-bottom-section {
+    @include grid_container(1em);
+    grid-template-columns: auto 1fr;
+  }
+}

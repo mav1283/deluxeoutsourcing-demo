@@ -1,0 +1,9 @@
+.app-footer {
+  @include grid-container(0);
+  grid-template-rows: 1fr auto;
+  .foot-bottom-section {
+    @include grid-container(0.5em);
+    justify-content: center;
+    text-align: center;
+  }
+}
