@@ -1,0 +1,33 @@
+.slider {
+  position: relative;
+  @include uniform-sides-padded-container(4rem);
+  @extend .green-bg;
+  .slider-buttons {
+    position: absolute;
+    @extend .flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 100;
+    button {
+      background: var(--trans-dark-3);
+      @include two-sides-padded-container(0.5em, 1em);
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+  .slides-container {
+    @include bordered-container(1px, solid, var(--trans-dark-1));
+    position: relative;
+    overflow: hidden;
+    .slide-train {
+      position: absolute;
+      @extend .flex;
+      flex-direction: column;
+    }
+  }
+}
