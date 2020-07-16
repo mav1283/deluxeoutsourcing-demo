@@ -1,0 +1,32 @@
+.feature{
+    @extend .flex;
+    @include uniform-sides-padded-container(4rem);
+
+    .feature-icon{
+        @extend .green-highlight;
+        padding-right: 0.5em;
+        font-size: 3rem;
+    }
+    .feature-details{
+        @include grid-container(1em);
+        color: var(--grey-800)
+    }
+    .feature-cta{
+        @extend .green-highlight-2;
+        @extend .flex;
+        align-items: center;
+        transition: 0.4s ease-in-out;
+        font-size: 1.25rem;
+        font-weight: 500;
+        .feature-icon{
+            transition: inherit;
+            font-size: inherit;
+            margin-left: 0.5em;
+        }
+        &:hover{
+            .feature-icon{
+                margin-left: 1em
+            }
+        }
+    }
+}

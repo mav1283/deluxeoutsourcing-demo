@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Logo() {
   return (
     <div className='app-logo'>
-      <Link to='/'><span className="green-highlight">deluxe</span>outsourcing</Link>
+      <Link to='/'><span className="green-highlight">delux</span>outsourcing</Link>
     </div>
   );
 }

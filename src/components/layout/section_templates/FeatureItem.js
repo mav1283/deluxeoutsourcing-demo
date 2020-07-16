@@ -6,9 +6,9 @@ function FeatureItem({feature_icon,feature_title,feature_description, feature_ur
         <div className='feature'>
             <div className="feature-icon">{feature_icon}</div>
             <div className="feature-details">
-                <h3 className="feature-tite">{feature_title}</h3>
+                <h2 className="feature-tite">{feature_title}</h2>
                 <p className="feature-description">{feature_description}</p>
-    <Link to={`/${feature_url}`} className='feature-cta'>{feature_cta}</Link>
+    <Link to={`/${feature_url}`} className='feature-cta'>{feature_cta}<span className="feature-icon">&#10095;</span></Link>
             </div>
         </div>
     )
