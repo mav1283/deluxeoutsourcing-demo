@@ -1,16 +1,31 @@
 import React from 'react';
 
-function SlideCard({ media, message, name, profession }) {
+function SlideCard({
+  currentSlideIndex,
+  slideIndex,
+  id,
+  media,
+  message,
+  name,
+  profession,
+}) {
   return (
-    <div>
-      <div className='card-media'>{media}</div>
+    <div
+      className={slideIndex == currentSlideIndex ? 'slide active' : 'slide'}
+      id={id}
+    >
+      <div className='card-media'>
+        <img src={media} alt={name} />
+      </div>
       <div className='card-details'>
         <div className='testimonial'>
-          <h3>{message}</h3>
+          <q>{message}</q>
         </div>
         <div className='author'>
           <h4>{name}</h4>
-          <p>{profession}</p>
+          <p>
+            <i>{profession}</i>
+          </p>
         </div>
       </div>
     </div>

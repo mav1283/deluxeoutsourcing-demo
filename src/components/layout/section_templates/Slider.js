@@ -1,31 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SlideCard from './SlideCard';
 
 function Slider({ slides }) {
-  const [slideIndex, setSlideIndex] = useState(0);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const handlePrevious = () => {
-    if (slideIndex > 0) {
-      setSlideIndex((prevState) => prevState - 1);
+    if (currentSlideIndex > 0) {
+      setCurrentSlideIndex((prevState) => prevState - 1);
     }
   };
 
   const handleNext = () => {
-    if (slideIndex < slides.length - 1) {
-      setSlideIndex((prevState) => prevState + 1);
+    if (currentSlideIndex < slides.length - 1) {
+      setCurrentSlideIndex((prevState) => prevState + 1);
     }
   };
+
+  useEffect(() => {
+    console.log(currentSlideIndex);
+  }, [currentSlideIndex]);
 
   return (
     <section className='slider'>
       <div className='slider-buttons'>
-        <button onClick={handlePrevious}>&#x3c;</button>
-        <button onClick={handleNext}>&#x3e;</button>
+        <button onClick={handlePrevious}>&#10094;</button>
+        <button onClick={handleNext}>&#10095;</button>
       </div>
       <div className='slides-container'>
         <div className='slide-train'>
-          {slides.map((slide) => (
-            <SlideCard key={slide.id} {...slide} />
+          {slides.map((slide, i) => (
+            <SlideCard
+              key={slide.id}
+              currentSlideIndex={currentSlideIndex}
+              slideIndex={i}
+              {...slide}
+            />
           ))}
         </div>
       </div>

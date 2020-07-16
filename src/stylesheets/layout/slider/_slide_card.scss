@@ -1,0 +1,38 @@
+.slide {
+  min-width: 100%;
+  display: none;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  .card-media {
+    grid-column: 1 / 3;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .card-details {
+    grid-column: 3/-1;
+    @include grid-container(1em);
+    @include uniform-sides-padded-container(1em);
+    .testimonial {
+      @extend .green-highlight;
+      font-size: 2.5rem;
+      font-weight: 300;
+      max-width: 30ch;
+    }
+    .author {
+      color: var(--grey-800);
+      p {
+        font-weight: 300;
+        margin-top: 0.25em;
+        color: var(--grey-500);
+      }
+    }
+  }
+}
+
+.slide.active {
+  @include grid-container(0);
+  grid-template-columns: repeat(8, 1fr);
+  opacity: 1;
+}
