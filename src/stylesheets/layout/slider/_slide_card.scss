@@ -1,0 +1,51 @@
+.slide {
+  position: relative;
+  // flex: 1;
+  // @include grid-container(0);
+  // grid-template-columns: repeat(8, 1fr);
+  // grid-template-rows: 1fr;
+  display: flex;
+  opacity: 0.5;
+  min-width: 100%;
+  transition: opacity 0.4s ease-in-out;
+  align-items: center;
+  background: #fff;
+  &:first-child {
+    left: 0;
+  }
+  .card-media {
+    grid-column: 1 / 3;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .card-details {
+    grid-column: 3/-1;
+    @extend .flex;
+    align-items: flex-start;
+    @include uniform-sides-padded-container(1em);
+
+    .testimonial {
+      @include grid-container(1em);
+      grid-template-rows: auto auto;
+      .quote {
+        @extend .green-highlight;
+        font-size: 2rem;
+        font-weight: 300;
+      }
+      .author {
+        color: var(--grey-800);
+        p {
+          font-weight: 300;
+          margin-top: 0.25em;
+          color: var(--grey-500);
+        }
+      }
+    }
+  }
+}
+
+.slide.active {
+  opacity: 1;
+}
