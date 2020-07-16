@@ -15,17 +15,21 @@ function SlideCard({
       id={id}
     >
       <div className='card-media'>
-        <img src={media} alt={name} />
+        <figure>
+          <img src={media} alt={name} />
+        </figure>
       </div>
       <div className='card-details'>
         <div className='testimonial'>
-          <q>{message}</q>
-        </div>
-        <div className='author'>
-          <h4>{name}</h4>
-          <p>
-            <i>{profession}</i>
-          </p>
+          <div className='quote'>
+            <q>{message}</q>
+          </div>
+          <div className='author'>
+            <h4>{name}</h4>
+            <p>
+              <i>{profession}</i>
+            </p>
+          </div>
         </div>
       </div>
     </div>

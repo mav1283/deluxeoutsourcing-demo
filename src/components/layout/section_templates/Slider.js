@@ -2,17 +2,21 @@ import React, { useState, useEffect } from 'react';
 import SlideCard from './SlideCard';
 
 function Slider({ slides }) {
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(1);
+  // const [trainStyle, setTrainStyle] = useState({ right: 0 });
+  // const scontainer = document.getElementById('s-container');
 
   const handlePrevious = () => {
-    if (currentSlideIndex > 0) {
+    if (currentSlideIndex > 1) {
       setCurrentSlideIndex((prevState) => prevState - 1);
+      // setTrainStyle((prevState) => prevState - `${scontainer.clientWidth}px`);
     }
   };
 
   const handleNext = () => {
-    if (currentSlideIndex < slides.length - 1) {
+    if (currentSlideIndex < slides.length) {
       setCurrentSlideIndex((prevState) => prevState + 1);
+      // setTrainStyle((prevState) => prevState + `${scontainer.clientWidth}px`);
     }
   };
 
@@ -26,13 +30,21 @@ function Slider({ slides }) {
         <button onClick={handlePrevious}>&#10094;</button>
         <button onClick={handleNext}>&#10095;</button>
       </div>
-      <div className='slides-container'>
-        <div className='slide-train'>
+      <div id='s-container' className='slides-container'>
+        <div
+          id='s-train'
+          className='slide-train'
+          style={{
+            transform: `translateX(-${
+              currentSlideIndex * (100 / slides.legnth)
+            }%)`,
+          }}
+        >
           {slides.map((slide, i) => (
             <SlideCard
               key={slide.id}
               currentSlideIndex={currentSlideIndex}
-              slideIndex={i}
+              slideIndex={i + 1}
               {...slide}
             />
           ))}
