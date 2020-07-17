@@ -3,20 +3,23 @@ import SlideCard from './SlideCard';
 
 function Slider({ slides }) {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(1);
-  // const [trainStyle, setTrainStyle] = useState({ right: 0 });
-  // const scontainer = document.getElementById('s-container');
+  const trans = 'translateX(-'+
+    currentSlideIndex * (100 / slides.legnth)+
+  '%)';
+
+  const customcss = {transform:trans};
 
   const handlePrevious = () => {
     if (currentSlideIndex > 1) {
       setCurrentSlideIndex((prevState) => prevState - 1);
-      // setTrainStyle((prevState) => prevState - `${scontainer.clientWidth}px`);
+      
     }
   };
 
   const handleNext = () => {
     if (currentSlideIndex < slides.length) {
       setCurrentSlideIndex((prevState) => prevState + 1);
-      // setTrainStyle((prevState) => prevState + `${scontainer.clientWidth}px`);
+      
     }
   };
 
@@ -34,11 +37,7 @@ function Slider({ slides }) {
         <div
           id='s-train'
           className='slide-train'
-          style={{
-            transform: `translateX(-${
-              currentSlideIndex * (100 / slides.legnth)
-            }%)`,
-          }}
+          style={customcss}
         >
           {slides.map((slide, i) => (
             <SlideCard
