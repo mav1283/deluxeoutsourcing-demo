@@ -7,6 +7,10 @@ import { BsBarChartFill } from 'react-icons/bs';
 import { FaShippingFast } from 'react-icons/fa';
 import Features from '../layout/section_templates/Features';
 import Slider from '../layout/section_templates/Slider';
+import Infrastructure from '../layout/section_templates/Infrastructure';
+import Charts from '../layout/section_templates/Charts';
+import HowItWorksSteps from '../layout/section_templates/HoItWorksSteps';
+import FAQcontact from '../layout/section_templates/FAQcontact';
 
 function Home() {
   const features = [
@@ -73,6 +77,10 @@ function Home() {
       />
       <Features features={features} />
       <Slider slides={slides} />
+      <Infrastructure />
+      <Charts />
+      <HowItWorksSteps />
+      <FAQcontact />
     </div>
   );
 }
