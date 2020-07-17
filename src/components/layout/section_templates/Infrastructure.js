@@ -6,7 +6,8 @@ function Infrastructure({infrastructures}){
     return (
         <section className='infrastructure'>
             {
-                infrastructures.map(item=><InfraItem key={item.id} {...item} />)
+                infrastructures?
+                infrastructures.map(item=><InfraItem key={item.id} {...item} />) : null
             }        
         </section>
     )
