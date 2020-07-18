@@ -8,17 +8,15 @@ import Infrastructure from '../layout/section_templates/Infrastructure';
 import Charts from '../layout/section_templates/Charts';
 import HowItWorksSteps from '../layout/section_templates/HoItWorksSteps';
 import FAQcontact from '../layout/section_templates/FAQcontact';
-import Sponsors from '../layout/section_templates/Sponsors';
+import Certificates from '../layout/section_templates/Certificates';
 
 /* Dummies*/
 import features from '../dummies/features';
 import slides from '../dummies/slides';
 import infrastuctures from '../dummies/infrastructures';
-import sponsors from '../dummies/sponsors';
+import certificates from '../dummies/certificates';
 
 function Home() {
-  
-
   return (
     <div>
       <Hero
@@ -30,11 +28,11 @@ function Home() {
       />
       <Features features={features} />
       <Slider slides={slides} />
-      <Infrastructure infrastructures={infrastuctures}/>
+      <Infrastructure infrastructures={infrastuctures} />
       <Charts />
       <HowItWorksSteps />
       <FAQcontact />
-      <Sponsors sponsors={sponsors} />
+      <Certificates certificates={certificates} />
     </div>
   );
 }

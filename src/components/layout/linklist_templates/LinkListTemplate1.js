@@ -8,7 +8,6 @@ function LinkListTemplate1({ id, title, subtitle, sublinks }) {
       <div className='link-list-section'>
         {subtitle && <h5 className='link-list-sub-header'>{subtitle}</h5>}
         <ul className='link-list'>
-          <li>list here</li>
           {sublinks.map((item) => {
             return (
               <Link key={item.id} to={item.url}>

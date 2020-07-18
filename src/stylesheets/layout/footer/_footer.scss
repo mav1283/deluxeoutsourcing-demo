@@ -2,17 +2,24 @@
   @include grid-container(0);
   grid-template-rows: 1fr auto;
   color: var(--grey-800);
+  .foot-top-section {
+    @include grid-container(1em);
+    grid-template-columns: repeat(6, minmax(100px, 200px));
+  }
   .foot-bottom-section {
-    @include border-top(1px,solid,var(--trans-dark-3));
+    @include border-top(1px, solid, var(--trans-dark-3));
     @include grid-container(0.5em);
-    @include custom-padding(2em,4em,4em,4em);
+    @include custom-padding(2em, 4em, 4em, 4em);
     justify-content: center;
     text-align: center;
-    p,a{font-size: 0.85rem !important;}
-    .policy-terms-sitemap{
+    p,
+    a {
+      font-size: 0.85rem !important;
+    }
+    .policy-terms-sitemap {
       display: flex;
       justify-content: center;
-      a{
+      a {
         margin: 0 0.5em;
       }
     }

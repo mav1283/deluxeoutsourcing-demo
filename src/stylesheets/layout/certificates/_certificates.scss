@@ -1,0 +1,13 @@
+.certificates {
+  @extend .flex-centered;
+  background: #f5f5f5;
+  .certificates-section-list {
+    @extend .flex-centered;
+    img {
+      flex: 1;
+      max-height: 100px;
+      width: auto;
+      margin: 0 2em;
+    }
+  }
+}
