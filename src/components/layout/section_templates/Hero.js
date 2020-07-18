@@ -7,7 +7,7 @@ useEffect(()=>{
 },[bg_image])
 
   return (
-    <section className='hero' style={{backgroundImage:`url(${bg_image})`}}>
+    <section className='hero sect' style={{backgroundImage:`url(${bg_image})`}}>
       <div className='hero-text-details'>
         <div className='headlines'>
 

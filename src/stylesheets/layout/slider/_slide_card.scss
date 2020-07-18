@@ -1,12 +1,10 @@
 .slide {
   position: relative;
-  // flex: 1;
-  // @include grid-container(0);
-  // grid-template-columns: repeat(8, 1fr);
-  // grid-template-rows: 1fr;
-  display: flex;
+  @include grid-container(0);
+  grid-template-columns: 240px 1fr;
   opacity: 0.5;
   min-width: 100%;
+  height: inherit;
   transition: opacity 0.4s ease-in-out;
   align-items: center;
   background: #fff;
@@ -14,14 +12,14 @@
     left: 0;
   }
   .card-media {
-    grid-column: 1 / 3;
+    //grid-column: 1;
     img {
       width: 100%;
       height: auto;
     }
   }
   .card-details {
-    grid-column: 3/-1;
+    //grid-column: 2;
     @extend .flex;
     align-items: flex-start;
     @include uniform-sides-padded-container(1em);

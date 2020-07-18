@@ -1,0 +1,21 @@
+.infra-item{
+    @include grid-container(0.5em);
+    justify-content: center;
+    text-align: center;
+    div{
+        @extend .flex-centered;
+    }
+    .infra-icon{
+        font-size: 5rem;
+        @extend .green-highlight;
+        margin: 0;
+        padding: 0;
+    }
+    .infra-value{
+        font-size: 2rem;
+        color: var(--blue-400);
+    }
+    .infra-description{
+        max-width:20ch;
+    }
+}

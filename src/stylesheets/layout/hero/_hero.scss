@@ -1,6 +1,5 @@
 .hero{
     @include grid-container(1em);
-    @include uniform-sides-padded-container(4rem);
     background-color: var(--grey-800);
     background-size: cover;
     background-blend-mode: multiply;

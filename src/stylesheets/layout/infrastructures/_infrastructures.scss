@@ -1,0 +1,14 @@
+.infrastructures{
+    @include grid-container(4em);
+    
+    .infra-headline{
+        p{
+            margin-top: 1em;
+        }
+        text-align: center;
+    }
+    .infra-details{
+        @include grid-container(1em);
+        grid-template-columns: repeat(3,1fr);
+    }
+}

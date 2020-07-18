@@ -8,7 +8,7 @@ function Footer() {
 
   return (
     <footer className='app-footer'>
-      <div className='foot-top-section'>
+      <div className='foot-top-section sect'>
         {footContent.map((item) => {
           return (
             <LinkListTemplate1 key={item.id} {...item} />

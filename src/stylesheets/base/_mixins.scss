@@ -51,6 +51,14 @@
   border: $size $type $color;
 }
 
+@mixin border-top($size, $type, $color) {
+  border-top: $size $type $color;
+}
+
+@mixin border-bottom($size, $type, $color) {
+  border-bottom: $size $type $color;
+}
+
 @mixin border-top-bottom($size, $type, $color) {
   border-top: $size $type $color;
   border-bottom: $size $type $color;
@@ -58,12 +66,15 @@
 
 @mixin border-left($size, $type, $color) {
   border-left: $size $type $color;
-  
 }
 
 @mixin border-right($size, $type, $color) {
   border-right: $size $type $color;
-  
+}
+
+@mixin border-left-right($size,$type,$color){
+  border-left: $size $type $color;
+  border-right: $size $type $color;
 }
 
 @mixin text-shadow($x, $y, $z, $color) {
@@ -74,6 +85,30 @@
 @mixin appearance-none {
   -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
+}
+
+@mixin padding-top($size){
+  padding-top: $size
+}
+
+@mixin padding-bottom($size){
+  padding-bottom: $size
+}
+
+@mixin padding-left($size){
+  padding-left: $size
+}
+
+@mixin padding-right($size){
+  padding-right: $size
+}
+
+@mixin custom-padding($size1,$size2,$size3,$size4){
+  padding-top: $size1;
+  padding-right: $size2;
+  padding-bottom: $size3;
+  padding-left: $size4;
+
 }
 
 @mixin uniform-sides-padded-container($size) {

@@ -2,7 +2,7 @@
   position: relative;
   @include two-sides-padded-container(4em, 6em);
   @extend .green-bg;
-
+  @extend .flex-centered;
   .slider-buttons {
     position: absolute;
     @extend .flex;
@@ -31,9 +31,10 @@
     }
   }
   .slides-container {
-    @include bordered-container(1px, solid, var(--trans-dark-1));
-    height: 240px;
     position: relative;
+    background: var(--trans-dark-1);
+    width: 100%;
+    min-height: 240px;
     overflow: hidden;
     .slide-train {
       position: absolute;

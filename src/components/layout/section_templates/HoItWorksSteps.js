@@ -2,7 +2,7 @@ import React from 'react';
 
 function HowItWorksSteps(props){
     return (
-        <section className='hiw-steps'>
+        <section className='hiw-steps sect'>
             <div>
                 <p className="hiws-num">1</p>
                 <h1 className="hiws-step">Step Name</h1>
