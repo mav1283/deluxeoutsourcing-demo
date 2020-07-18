@@ -1,5 +1,5 @@
 button {
-  @include two-sides-padded-container(1em, 1.5em);
+  @include two-sides-padded-container(1em, 2em);
   position: relative;
   cursor: pointer;
   border: none;
