@@ -1,40 +1,56 @@
-.app-nav{
-    @extend .flex;
-    justify-content: flex-end;
-    a{
-        @extend .flex-centered;
-        flex-wrap:wrap;
-        text-transform:uppercase;
-        @include two-sides-padded-container(2em,1.5em);
-        @include border-left(1px,solid,var(--trans-dark-1));
-        border-image: linear-gradient(to bottom,transparent,var(--trans-dark-1),transparent) 0 100% 0;
-        text-align: center;
-        color: var(--grey-800);
-        font-size: 0.75rem;
-        font-weight: 300;        
-        transition: 0.4s ease-in-out;
-        
-        &:last-child{
-            @extend .green-bg;
-            border: none;
-        }
-        span.nav-icon{
-            transition: inherit;
-            font-size: 1rem;
-            margin-left: 1em;
-            transform: rotate(90deg);
-            @extend .green-highlight;
-        }
+.app-nav-desktop {
+  justify-content: flex-end;
+  a {
+    @extend .flex-centered;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    @include two-sides-padded-container(2em, 1.5em);
+    @include border-left(1px, solid, var(--trans-dark-1));
+    border-image: linear-gradient(
+        to bottom,
+        transparent,
+        var(--trans-dark-1),
+        transparent
+      )
+      0 100% 0;
+    text-align: center;
+    color: var(--grey-800);
+    font-size: 0.75rem;
+    font-weight: 300;
+    transition: 0.4s ease-in-out;
 
-        span.nav-icon-front{
-            margin-right: 1em;
-        }
-
-       &:hover{
-           span.nav-icon{
-               transform: rotate(270deg);
-           }
-       } 
+    &:last-child {
+      @extend .green-bg;
+      border: none;
     }
+    span.nav-icon {
+      transition: inherit;
+      font-size: 1rem;
+      margin-left: 1em;
+      transform: rotate(90deg);
+      @extend .green-highlight;
+    }
+
+    span.nav-icon-front {
+      margin-right: 1em;
+    }
+
+    &:hover {
+      span.nav-icon {
+        transform: rotate(270deg);
+      }
+    }
+  }
 }
 
+@media only screen and (min-width: 0px) {
+  .app-nav-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .app-nav-desktop {
+    display: flex;
+  }
+}

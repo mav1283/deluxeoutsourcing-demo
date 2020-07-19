@@ -1,32 +1,97 @@
-.feature{
-    @extend .flex;
-    @include uniform-sides-padded-container(4rem);
+.feature {
+  // @extend .flex;
+  background-color: #fff;
+  @include grid-container(1em);
+  @include uniform-sides-padded-container(4rem);
 
-    .feature-icon{
-        @extend .green-highlight;
-        padding-right: 0.5em;
-        font-size: 3rem;
+  .feature-icon {
+    @extend .flex;
+    justify-content: center;
+    @extend .green-highlight;
+    // padding-right: 0.5em;
+  }
+  .feature-details {
+    @include grid-container(1em);
+    color: var(--grey-800);
+  }
+  .feature-cta {
+    @extend .green-highlight-2;
+    // @extend .flex;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    font-size: 1.25rem;
+    font-weight: 500;
+    .feature-cta-icon {
+      transition: inherit;
+      font-size: inherit;
+      margin-left: 0.5em;
     }
-    .feature-details{
-        @include grid-container(1em);
-        color: var(--grey-800)
+    &:hover {
+      .feature-cta-icon {
+        margin-left: 1em;
+      }
     }
-    .feature-cta{
-        @extend .green-highlight-2;
-        @extend .flex;
-        align-items: center;
-        transition: 0.4s ease-in-out;
-        font-size: 1.25rem;
-        font-weight: 500;
-        .feature-icon{
-            transition: inherit;
-            font-size: inherit;
-            margin-left: 0.5em;
-        }
-        &:hover{
-            .feature-icon{
-                margin-left: 1em
-            }
-        }
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  .feature {
+    grid-template-columns: 1fr;
+
+    .feature-icon {
+      align-items: center;
+      font-size: 5rem;
     }
+    .feature-details,
+    .feature-cta {
+      text-align: center;
+    }
+    // .feature-cta{
+
+    // }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .feature {
+    grid-template-columns: auto 1fr;
+
+    .feature-icon {
+      align-self: start;
+      font-size: 3rem;
+    }
+    .feature-details,
+    .feature-cta {
+      text-align: left;
+    }
+    // .feature-cta{
+
+    // }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .feature {
+    &:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .feature {
+    grid-template-columns: 1fr;
+
+    .feature-icon {
+      align-items: center;
+      font-size: 5rem;
+    }
+    .feature-details,
+    .feature-cta {
+      text-align: center;
+    }
+    &:last-child {
+      grid-column: auto;
+    }
+  }
 }

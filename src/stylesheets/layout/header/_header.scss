@@ -11,6 +11,28 @@
   }
   .head-bottom-section {
     @include grid_container(0);
-    grid-template-columns: auto 1fr;
+    // grid-template-columns: auto 1fr;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  .app-header {
+    .head-top-section {
+      justify-content: center;
+    }
+    .head-bottom-section {
+      grid-template-columns: 1fr auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .app-header {
+    .head-top-section {
+      justify-content: flex-end;
+    }
+    .head-bottom-section {
+      grid-template-columns: 1fr auto;
+    }
   }
 }

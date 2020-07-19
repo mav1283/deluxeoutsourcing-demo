@@ -27,12 +27,12 @@ function Home() {
         bg_image={bgImage}
       />
       <Features features={features} />
-      <Slider slides={slides} />
-      <Infrastructure infrastructures={infrastuctures} />
-      <Charts />
-      <HowItWorksSteps />
-      <FAQcontact />
-      <Certificates certificates={certificates} />
+      {/* <Slider slides={slides} /> */}
+      {/* <Infrastructure infrastructures={infrastuctures} /> */}
+      {/* <Charts /> */}
+      {/* <HowItWorksSteps /> */}
+      {/* <FAQcontact /> */}
+      {/* <Certificates certificates={certificates} /> */}
     </div>
   );
 }

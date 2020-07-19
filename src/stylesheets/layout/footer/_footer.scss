@@ -4,7 +4,7 @@
   color: var(--grey-800);
   .foot-top-section {
     @include grid-container(1em);
-    grid-template-columns: repeat(6, minmax(100px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .foot-bottom-section {
     @include border-top(1px, solid, var(--trans-dark-3));

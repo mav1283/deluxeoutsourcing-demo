@@ -1,25 +1,43 @@
-.hero{
+.hero {
+  @include grid-container(1em);
+  background-color: var(--grey-800);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: #fff;
+  min-height: 100px;
+
+  .hero-text-details {
     @include grid-container(1em);
-    background-color: var(--grey-800);
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: #fff;
-    min-height: 100px;
+
+    h1 {
+      font-weight: 300;
+      font-size: 3rem;
+    }
+    h3 {
+      @extend .green-highlight;
+      font-weight: 500;
+      font-size: 2rem;
+    }
+  }
+  .hero-cta-btn {
+    @extend .green-bg;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  .hero {
+    justify-content: center;
+    .hero-text-details {
+      max-width: 40ch;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
     justify-content: flex-start;
-    .hero-text-details{
-        @include grid-container(1em);
-        max-width: 60ch;
-        h1{
-            font-weight: 300;
-            font-size: 3rem;
-        }
-        h3{
-            @extend .green-highlight;
-            font-weight: 500;
-            font-size: 2rem;
-        }
+    .hero-text-details {
+      max-width: 60ch;
     }
-    .hero-cta-btn{
-        @extend .green-bg;
-    }
+  }
 }

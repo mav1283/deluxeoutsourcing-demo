@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../logo/Logo';
-import Navmenu from '../navmenu/Navmenu';
+import NavmenuDesktop from '../navmenu/NavmenuDesktop';
 
 function Header() {
+  useEffect(() => {
+    console.log(document.getElementsByTagName('body').innerWidth);
+  }, []);
+
   return (
     <header className='app-header'>
       <div className='head-top-section'>
@@ -10,7 +14,7 @@ function Header() {
       </div>
       <div className='head-bottom-section'>
         <Logo />
-        <Navmenu />
+        <NavmenuDesktop />
       </div>
     </header>
   );
