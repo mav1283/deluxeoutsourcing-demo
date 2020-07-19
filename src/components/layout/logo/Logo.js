@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavmenuButton from '../header/NavmenuButton';
 
 function Logo() {
   return (
@@ -7,6 +8,7 @@ function Logo() {
       <Link to='/'>
         <span className='green-highlight'>delux</span>outsourcing
       </Link>
+      <NavmenuButton />
     </div>
   );
 }

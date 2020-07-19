@@ -1,0 +1,15 @@
+.hiw-steps{
+    @include grid-container(1em);
+}
+
+@media only screen and (min-width:0px){
+    .hiw-steps{grid-template-columns: 1fr;}
+}
+
+@media only screen and (min-width:500px){
+    .hiw-steps{grid-template-columns: repeat(2,1fr);}
+}
+
+@media only screen and (min-width:600px){
+    .hiw-steps{grid-template-columns: repeat(auto-fit,minmax(240px,1fr));}
+}

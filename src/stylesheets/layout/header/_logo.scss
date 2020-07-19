@@ -1,5 +1,8 @@
 .app-logo{
+    @include grid-container(1em);
     @include two-sides-padded-container(2em,1.5em);
+    grid-template-columns: auto auto;
+    align-items: center;
     text-transform: uppercase;
     color: var(--grey-800);
     a{
@@ -10,4 +13,5 @@
     span{
         font-weight: 800;
     }
+
 }

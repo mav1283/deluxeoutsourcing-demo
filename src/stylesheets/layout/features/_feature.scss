@@ -95,3 +95,39 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .feature {
+    grid-template-columns: 1fr;
+
+    .feature-icon {
+      align-items: center;
+      font-size: 5rem;
+    }
+    .feature-details,
+    .feature-cta {
+      text-align: center;
+    }
+    &:last-child {
+      grid-column: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .feature {
+    grid-template-columns: auto 1fr;
+
+    .feature-icon {
+      align-items: start;
+      font-size: 3rem;
+    }
+    .feature-details,
+    .feature-cta {
+      text-align: left;
+    }
+    &:last-child {
+      grid-column: auto;
+    }
+  }
+}

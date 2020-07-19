@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Logo from '../logo/Logo';
 import NavmenuDesktop from '../navmenu/NavmenuDesktop';
 
 function Header() {
   useEffect(() => {
-    console.log(document.getElementsByTagName('body').innerWidth);
+    console.log(window.innerWidth);
   }, []);
 
   return (

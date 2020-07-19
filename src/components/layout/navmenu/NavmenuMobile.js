@@ -1,9 +1,11 @@
-import React from 'react';
+import React,{createPortal} from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaPhone } from 'react-icons/fa';
 
+
 function NavmenuMobile() {
   return (
+    
     <nav className='app-nav-mobile'>
       <NavLink to='/why-deluxe'>
         Why deluxe<span className='nav-icon'>&#10095;</span>

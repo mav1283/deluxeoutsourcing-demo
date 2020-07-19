@@ -4,7 +4,7 @@
   color: var(--grey-800);
   .foot-top-section {
     @include grid-container(1em);
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .foot-bottom-section {
     @include border-top(1px, solid, var(--trans-dark-3));
@@ -23,5 +23,15 @@
         margin: 0 0.5em;
       }
     }
+  }
+}
+
+@media only screen and (min-width:0px){
+  .app-footer {
+    
+    .foot-top-section {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+   
   }
 }

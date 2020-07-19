@@ -28,9 +28,9 @@ function Home() {
       />
       <Features features={features} />
       {/* <Slider slides={slides} /> */}
-      {/* <Infrastructure infrastructures={infrastuctures} /> */}
+      <Infrastructure infrastructures={infrastuctures} />
       {/* <Charts /> */}
-      {/* <HowItWorksSteps /> */}
+      <HowItWorksSteps />
       {/* <FAQcontact /> */}
       {/* <Certificates certificates={certificates} /> */}
     </div>
