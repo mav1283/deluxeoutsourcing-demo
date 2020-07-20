@@ -19,7 +19,6 @@
   }
   .faq-contact-form {
     @include grid-container(1em);
-    grid-template-columns: repeat(2, 1fr);
     .form-group {
       input,
       select,
@@ -54,11 +53,28 @@
     .check {
       @extend .flex;
       justify-content: flex-start;
+      flex-wrap: wrap;
       align-items: center;
       span {
         margin-left: 1em;
         color: #fff;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  .faq-contact {
+    .faq-contact-form {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .faq-contact {
+    .faq-contact-form {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

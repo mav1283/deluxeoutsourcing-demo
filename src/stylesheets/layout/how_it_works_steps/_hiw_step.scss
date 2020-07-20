@@ -1,0 +1,42 @@
+.hiw-step {
+  @include grid-container(0);
+  .hiw-id {
+    @extend .flex-centered;
+    text-align: center;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 50%,
+      white 50%,
+      white 100%
+    );
+    p {
+      @extend .flex-centered;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      font-size: 2.25rem;
+      font-weight: 600;
+      padding: 1.25em;
+      @include border-radius(50%);
+      @extend .green-bg;
+    }
+  }
+  .hiw-step-details {
+    @include grid-container(0.5em);
+    justify-content: center;
+    text-align: center;
+    @include custom-padding(1em, 1.5em, 3em, 1.5em);
+    background: #fff;
+    color: var(--grey-800);
+    .hiw-icon {
+      @extend .flex-centered;
+      font-size: 8rem;
+      @extend .green-highlight;
+    }
+    .hiw-lists {
+      @include grid-container(0);
+      list-style: none;
+    }
+  }
+}

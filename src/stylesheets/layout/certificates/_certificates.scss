@@ -3,6 +3,7 @@
   background: #f5f5f5;
   .certificates-section-list {
     @extend .flex-centered;
+    flex-wrap: wrap;
     img {
       flex: 1;
       max-height: 100px;
