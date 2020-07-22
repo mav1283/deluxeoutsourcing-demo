@@ -1,0 +1,13 @@
+input,
+select,
+textarea {
+  @include two-sides-padded-container(1em, 2em);
+  width: 100%;
+  resize: vertical;
+}
+textarea {
+  min-height: 100px;
+}
+label {
+  display: block;
+}

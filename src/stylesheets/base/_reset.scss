@@ -1,6 +1,8 @@
+* {
+  box-sizing: border-box;
+}
 body,
 body * {
-  box-sizing: border-box;
   margin: unset;
   padding: unset;
   color: unset;
@@ -9,7 +11,7 @@ body * {
 
 body {
   height: 100vh;
-  font-family: 'Roboto', 'Lato', sans-serif;
+  font-family: "Roboto", "Lato", sans-serif;
   letter-spacing: 0.025rem;
   #root {
     width: 100%;
