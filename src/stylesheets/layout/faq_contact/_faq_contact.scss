@@ -1,7 +1,10 @@
 .faq-contact {
-  background: var(--blue-grey-700);
   @include grid-container(4em);
+  background: var(--blue-grey-700);
   justify-content: center;
+  div {
+    max-width: 768px;
+  }
   .faq-headline {
     @include grid-container(2em);
     color: #fff;
@@ -17,38 +20,8 @@
       line-height: 1.5;
     }
   }
-  .faq-contact-form {
-    @include grid-container(1em);
-
-    .submit-btn {
-      grid-column: 1 / span 2;
-      @extend .green-bg;
-    }
-    .check {
-      @extend .flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      align-items: center;
-      span {
-        margin: 1em;
-        color: #fff;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 0px) {
-  .faq-contact {
-    .faq-contact-form {
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
-@media only screen and (min-width: 500px) {
-  .faq-contact {
-    .faq-contact-form {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .faq-form-area {
+    @extend .flex;
+    justify-content: center;
   }
 }

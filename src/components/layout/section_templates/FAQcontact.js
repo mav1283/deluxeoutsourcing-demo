@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 function FAQcontact(props) {
   return (
-    <section className="faq-contact sect">
-      <div className="faq-headline">
+    <section className='faq-contact sect'>
+      <div className='faq-headline'>
         <h1>Need some answers?</h1>
         <p>
           If you’ve never offshored before, you’re sure to have a lot of
@@ -19,56 +19,67 @@ function FAQcontact(props) {
           they’ll tell you, straight up.
         </p>
       </div>
-      <form className="faq-contact-form">
-        <p>
-          <input type="text" placeholder="First name" />
-        </p>
-        <p>
-          <input type="text" placeholder="Last name" />
-        </p>
-        <p>
-          <input type="text" placeholder="Your company" />
-        </p>
-        <p>
-          <input type="text" placeholder="Phone" />
-        </p>
-        <p>
-          <input type="text" placeholder="Email" />
-        </p>
-
-        <select placeholder="Company size">
-          <option value="lorem ipusm">lorem ipsum</option>
-          <option value="lorem ipsum">lorem ipsume</option>
-        </select>
-
-        <select placeholder="Number of staff">
-          <option value="lorem ipsum">lorem ipsume</option>
-          <option value="lorem ipsum">lorem ipsume</option>
-        </select>
-
-        <select placeholder="What country?">
-          <option value="Philippines">Philippines</option>
-          <option value="United Kingdom">United Kingdom</option>
-        </select>
-
-        <textarea placeholder="Question"></textarea>
-
-        <div className="form-group check">
-          <input type="checkbox" />
+      <div className='faq-form-area'>
+        <form className='faq-contact-form'>
           <label>
-            We value your privacy. You agree to MicroSourcing's collection
-            statement
+            <input type='text' placeholder='First name' name='fname' />
           </label>
-        </div>
-        <div className="form-group check">
-          <input type="checkbox" />
           <label>
-            Yes, I'd like free access to an in-depth course about offshoring to
-            the Philippines.
+            <input type='text' placeholder='Last name' name='lname' />
           </label>
-        </div>
-        <button className="submit-btn">Send Email</button>
-      </form>
+          <label>
+            <input type='text' placeholder='Your company' name='company' />
+          </label>
+          <label>
+            <input type='text' placeholder='Phone' name='phonenum' />
+          </label>
+          <label>
+            <input type='email' placeholder='Email' name='email' />
+          </label>
+
+          <label>
+            <select placeholder='Company size' value='Company size'>
+              <option value='lorem ipusm'>lorem ipsum</option>
+              <option value='lorem ipsum'>lorem ipsume</option>
+            </select>
+          </label>
+
+          <label>
+            <select placeholder='Number of staff' value='Number of staff'>
+              <option value='lorem ipsum'>lorem ipsume</option>
+              <option value='lorem ipsum'>lorem ipsume</option>
+            </select>
+          </label>
+
+          <label>
+            <select placeholder='What country?'>
+              <option value='Philippines'>Philippines</option>
+              <option value='United Kingdom'>United Kingdom</option>
+            </select>
+          </label>
+
+          <label>
+            <textarea placeholder='Question'></textarea>
+          </label>
+          <label className='check-input'>
+            <input type='checkbox' />
+            <span className='checkmark'></span>
+            <span className='check-text'>
+              We value your privacy. You agree to MicroSourcing's collection
+              statement
+            </span>
+          </label>
+          <label className='check-input'>
+            <input type='checkbox' />
+            <span className='checkmark'></span>
+            <span className='check-text'>
+              Yes, I'd like free access to an in-depth course about offshoring
+              to the Philippines.
+            </span>
+          </label>
+          <button className='submit-btn'>Send Email</button>
+        </form>
+      </div>
     </section>
   );
 }
