@@ -20,20 +20,20 @@ import hiwsteps from "../dummies/hiwsteps";
 function Home() {
   return (
     <div>
-      {/* <Hero
+      <Hero
         headline="Lorem Ipsum Dolor Sit Amet, Verbatim"
         subheadline="This is a sub headline"
         description="consectetur adipiscing elit. Curabitur elementum in eros nec tempor. Curabitur eget purus rhoncus, ultricies erat id, vehicula lectus."
         cta_name="this is a call to action"
         bg_image={bgImage}
-      /> */}
-      {/* <Features features={features} /> */}
-      {/* <Slider slides={slides} /> */}
-      {/* <Infrastructure infrastructures={infrastuctures} /> */}
+      />
+      <Features features={features} />
+      <Slider slides={slides} />
+      <Infrastructure infrastructures={infrastuctures} />
       {/* <Charts /> */}
-      {/* <HowItWorksSteps hiwsteps={hiwsteps} /> */}
+      <HowItWorksSteps hiwsteps={hiwsteps} />
       <FAQcontact />
-      {/* <Certificates certificates={certificates} /> */}
+      <Certificates certificates={certificates} />
     </div>
   );
 }

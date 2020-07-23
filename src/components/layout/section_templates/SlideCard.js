@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function SlideCard({
   currentSlideIndex,
@@ -11,24 +11,28 @@ function SlideCard({
 }) {
   return (
     <div
-      className={slideIndex == currentSlideIndex ? 'slide active' : 'slide'}
+      className={slideIndex == currentSlideIndex ? "slide active" : "slide"}
       id={id}
     >
-      <div className='card-media'>
-        <figure>
-          <img src={media} alt={name} />
-        </figure>
+      <div className="card-media">
+        <div
+          className="media-image"
+          style={{ backgroundImage: `url(${media})` }}
+        ></div>
       </div>
-      <div className='card-details'>
-        <div className='testimonial'>
-          <div className='quote'>
-            <q>{message}</q>
+      <div className="card-details">
+        <div className="testimonial">
+          <div className="quote">
+            <blockquote>{message}</blockquote>
           </div>
-          <div className='author'>
-            <h4>{name}</h4>
-            <p>
-              <i>{profession}</i>
-            </p>
+          <div className="author">
+            <div className="tick-space">~</div>
+            <div className="author-details">
+              <h4> {name}</h4>
+              <p>
+                <i>{profession}</i>
+              </p>
+            </div>
           </div>
         </div>
       </div>
