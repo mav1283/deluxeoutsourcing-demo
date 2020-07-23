@@ -72,7 +72,7 @@
   border-right: $size $type $color;
 }
 
-@mixin border-left-right($size,$type,$color){
+@mixin border-left-right($size, $type, $color) {
   border-left: $size $type $color;
   border-right: $size $type $color;
 }
@@ -87,28 +87,27 @@
   appearance: none;
 }
 
-@mixin padding-top($size){
-  padding-top: $size
+@mixin padding-top($size) {
+  padding-top: $size;
 }
 
-@mixin padding-bottom($size){
-  padding-bottom: $size
+@mixin padding-bottom($size) {
+  padding-bottom: $size;
 }
 
-@mixin padding-left($size){
-  padding-left: $size
+@mixin padding-left($size) {
+  padding-left: $size;
 }
 
-@mixin padding-right($size){
-  padding-right: $size
+@mixin padding-right($size) {
+  padding-right: $size;
 }
 
-@mixin custom-padding($size1,$size2,$size3,$size4){
+@mixin custom-padding($size1, $size2, $size3, $size4) {
   padding-top: $size1;
   padding-right: $size2;
   padding-bottom: $size3;
   padding-left: $size4;
-
 }
 
 @mixin uniform-sides-padded-container($size) {
@@ -125,6 +124,14 @@
 
 @mixin form-input-padding($vert, $horz) {
   padding: $vert $horz;
+}
+
+/* Margins */
+@mixin custom-margin($size1, $size2, $size3, $size4) {
+  margin-top: $size1;
+  margin-right: $size2;
+  margin-bottom: $size3;
+  margin-left: $size4;
 }
 
 @mixin button-details($bg, $color) {

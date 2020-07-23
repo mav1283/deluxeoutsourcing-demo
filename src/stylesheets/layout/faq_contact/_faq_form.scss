@@ -10,26 +10,56 @@
     textarea {
       outline: transparent;
     }
+    cursor: pointer;
   }
-  .check-input {
-    @extend .flex;
-    // flex-wrap: wrap;
+
+  .select-type {
+    position: relative;
+    @include grid-container(1em);
+    grid-template-columns: 1fr auto;
+    select {
+      /* remove the default styling (arrow) */
+      position: relative;
+      // @extend .flex;
+      outline: 0;
+      box-shadow: none;
+      border: 0;
+      background-color: transparent;
+      background-image: none;
+      @include appearance-none;
+      &:ms-expand {
+        display: none;
+      }
+      &:active ~ .custom-select-arrow {
+        transform: rotate(-90deg);
+      }
+    }
+    .custom-select-arrow {
+      border-radius: inherit;
+      z-index: 100;
+      transform: rotate(90deg);
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+
+  .check-type {
+    @include grid-container(1em);
+    grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    background: transparent;
-    border: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
     input[type='checkbox'] {
       display: none;
     }
-    .check-text {
+    .checktext {
       color: #fff;
       font-weight: 300;
-      margin: 1em;
     }
     .checkmark {
       position: relative;
-      display: block;
+      display: inline-block;
       @include bordered-container(1px, solid, var(--trans-dark-3));
       @include border-radius(3px);
       width: 1.5em !important;
@@ -55,6 +85,29 @@
       &::before {
         @extend .flex-centered;
       }
+    }
+  }
+  .submit-btn {
+    @extend .green-bg;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .faq-contact-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .faq-contact-form {
+    grid-template-columns: repeat(2, 1fr);
+
+    .input-type:last-child,
+    .select-type:last-child,
+    .text-area,
+    .check-type,
+    .submit-btn {
+      grid-column: span 2;
     }
   }
 }

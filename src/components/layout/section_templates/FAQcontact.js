@@ -21,58 +21,70 @@ function FAQcontact(props) {
       </div>
       <div className='faq-form-area'>
         <form className='faq-contact-form'>
-          <label>
+          <label className='input-type'>
             <input type='text' placeholder='First name' name='fname' />
           </label>
-          <label>
+          <label className='input-type'>
             <input type='text' placeholder='Last name' name='lname' />
           </label>
-          <label>
-            <input type='text' placeholder='Your company' name='company' />
-          </label>
-          <label>
-            <input type='text' placeholder='Phone' name='phonenum' />
-          </label>
-          <label>
+          <label className='input-type'>
             <input type='email' placeholder='Email' name='email' />
           </label>
+          <label className='input-type'>
+            <input type='text' placeholder='Phone' name='phonenum' />
+          </label>
+          <label className='input-type'>
+            <input type='text' placeholder='Company Name' name='company' />
+          </label>
 
-          <label>
-            <select placeholder='Company size' value='Company size'>
+          <label className='select-type'>
+            <select>
+              <option selected disabled>
+                Company size
+              </option>
               <option value='lorem ipusm'>lorem ipsum</option>
               <option value='lorem ipsum'>lorem ipsume</option>
             </select>
+            <span className='custom-select-arrow'>&#10095;</span>
           </label>
 
-          <label>
-            <select placeholder='Number of staff' value='Number of staff'>
+          <label className='select-type'>
+            <select>
+              <option selected disabled>
+                Number of staff
+              </option>
               <option value='lorem ipsum'>lorem ipsume</option>
               <option value='lorem ipsum'>lorem ipsume</option>
             </select>
+            <span className='custom-select-arrow'>&#10095;</span>
           </label>
 
-          <label>
-            <select placeholder='What country?'>
+          <label className='select-type'>
+            <select>
+              <option selected disabled>
+                Select Country
+              </option>
               <option value='Philippines'>Philippines</option>
               <option value='United Kingdom'>United Kingdom</option>
             </select>
+            <span className='custom-select-arrow'>&#10095;</span>
           </label>
 
-          <label>
+          <label className='input-type text-area'>
             <textarea placeholder='Question'></textarea>
           </label>
-          <label className='check-input'>
+          <label className='check-type'>
             <input type='checkbox' />
             <span className='checkmark'></span>
-            <span className='check-text'>
+            <span className='checktext'>
               We value your privacy. You agree to MicroSourcing's collection
               statement
             </span>
           </label>
-          <label className='check-input'>
+          <label className='check-type'>
             <input type='checkbox' />
             <span className='checkmark'></span>
-            <span className='check-text'>
+            <span className='checktext'>
               Yes, I'd like free access to an in-depth course about offshoring
               to the Philippines.
             </span>
