@@ -10,7 +10,8 @@ body * {
 body {
   box-sizing: border-box;
   height: 100vh;
-  font-family: 'Roboto', 'Lato', sans-serif;
+  font-family: "Roboto", "Lato", sans-serif;
+  font-display: swap;
   letter-spacing: 0.025rem;
   #root {
     width: 100%;
