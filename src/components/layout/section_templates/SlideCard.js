@@ -11,7 +11,7 @@ function SlideCard({
 }) {
   return (
     <div
-      className={slideIndex == currentSlideIndex ? "slide active" : "slide"}
+      className={slideIndex === currentSlideIndex ? "slide active" : "slide"}
       id={id}
     >
       <div className="card-media">

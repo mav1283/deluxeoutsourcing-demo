@@ -34,7 +34,7 @@
       .quote {
         position: relative;
         display: inline-block;
-        font-size: 1.75rem;
+        font-size: calc(1.75rem + 1vw);
         font-weight: 300;
         color: var(--trans-light-7);
 
@@ -83,11 +83,18 @@
     .card-details {
       .testimonial {
         .quote {
+          max-width: 20ch;
           &::before {
             top: -30px;
-            left: 0;
             --size: 2rem;
           }
+        }
+        .quote,
+        .author {
+          text-align: center;
+        }
+        .author {
+          justify-content: center;
         }
       }
     }
@@ -108,11 +115,18 @@
     .card-details {
       .testimonial {
         .quote {
+          max-width: 100%;
           &::before {
             top: -50px;
-            left: -30px;
             --size: 6rem;
           }
+        }
+        .quote,
+        .author {
+          text-align: left;
+        }
+        .author {
+          justify-content: flex-start;
         }
       }
     }

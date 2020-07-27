@@ -11,12 +11,17 @@
 
     h1 {
       font-weight: 300;
-      font-size: 3rem;
+      font-size: calc(3rem - 1vw);
     }
-    h3 {
+    h2 {
       @extend .green-highlight;
       font-weight: 500;
-      font-size: 2rem;
+      font-size: calc(2rem - 1vw);
+    }
+    .description {
+      p {
+        font-weight: 300;
+      }
     }
   }
   .hero-cta-btn {

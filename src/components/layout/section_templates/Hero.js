@@ -1,26 +1,22 @@
-import React,{useEffect} from 'react';
+import React from "react";
 
-function Hero({headline,subheadline,description,cta_name,bg_image}) {
-
-useEffect(()=>{
-  console.log(bg_image)
-},[bg_image])
-
+function Hero({ headline, subheadline, description, cta_name, bg_image }) {
   return (
-    <section className='hero sect' style={{backgroundImage:`url(${bg_image})`}}>
-      <div className='hero-text-details'>
-        <div className='headlines'>
-
-        <h1>{headline}</h1>
-        <h3>{subheadline}</h3>
+    <section
+      className="hero sect"
+      style={{ backgroundImage: `url(${bg_image})` }}
+    >
+      <div className="hero-text-details">
+        <div className="headlines">
+          <h1>{headline}</h1>
+          <h2>{subheadline}</h2>
         </div>
-        <div className='description'>
-
-        <p>{description}</p>
+        <div className="description">
+          <p>{description}</p>
         </div>
       </div>
-      <div className='hero-cta'>
-        <button className='hero-cta-btn'>{cta_name}</button>
+      <div className="hero-cta">
+        <button className="hero-cta-btn">{cta_name}</button>
       </div>
     </section>
   );
