@@ -1,21 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
 
-function NavmenuMobile({ exitHandler, mobileNav }) {
-  const [initPos, setInitPos] = useState(
-    `-${document.getElementById("app-nav-mobile")}px`
-  );
-
-  useEffect(() => {
-    mobileNav && setInitPos(0);
-  }, [mobileNav]);
+function NavmenuMobile({ exitHandler }) {
   return (
-    <nav
-      id="app-nav-mobile"
-      className="app-nav-mobile"
-      style={{ transform: `translateX(${initPos})` }}
-    >
+    <nav id="app-nav-mobile" className="app-nav-mobile">
       <div className="nav-header">
         <h3>Menu</h3>
         <button onClick={exitHandler} className="modal-close">
@@ -23,6 +12,9 @@ function NavmenuMobile({ exitHandler, mobileNav }) {
         </button>
       </div>
       <div className="nav-links">
+        <NavLink to="/" onClick={exitHandler}>
+          Home<span className="nav-icon">&#10095;</span>
+        </NavLink>
         <NavLink to="/why-deluxe" onClick={exitHandler}>
           Why deluxe<span className="nav-icon">&#10095;</span>
         </NavLink>

@@ -24,8 +24,8 @@ function NavmenuButton() {
         <FaBars />
       </button>
       {mobileNav ? (
-        <MobileMenuModal exitHandler={closeMenu}>
-          <NavMenuMobile exitHandler={closeMenu} mobileNav={mobileNav} />
+        <MobileMenuModal exitHandler={closeMenu} mobileNav={mobileNav}>
+          <NavMenuMobile exitHandler={closeMenu} />
         </MobileMenuModal>
       ) : null}
     </>
