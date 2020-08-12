@@ -24,11 +24,11 @@
         @extend .flex-centered;
         @include uniform-sides-padded-container(0.25em);
         @include border-radius(50%);
-        @extend .green-bg;
+        @extend .primary-bg;
         width: 1rem;
         height: 1rem;
       }
-      border-bottom: 3px solid var(--green-400);
+      border-bottom: 3px solid $primary;
     }
     .nav-links {
       @include grid-container(0);
@@ -38,7 +38,7 @@
         @include two-sides-padded-container(1em, 2em);
         @include border-bottom(1px, solid, var(--trans-dark-3));
         &:last-child {
-          @extend .green-bg;
+          @extend .primary-bg;
           border-bottom: none;
         }
         &:hover:not(:last-child) {

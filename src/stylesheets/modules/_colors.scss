@@ -1,12 +1,44 @@
-.green-highlight{
-    color: var(--green-400);
+.primary-highlight {
+  color: $primary;
 }
 
-.green-highlight-2{
-    color: var(--green-600);
+.secondary-highlight {
+  color: $secondary;
 }
 
-.green-bg{
-    background-color:var(--green-400);
-    color: #fff;
+.success-highlight {
+  color: $success;
+}
+
+.warning-highlight {
+  color: $warning;
+}
+
+.danger-highlight {
+  color: $danger;
+}
+
+.primary-bg {
+  background-color: $primary;
+  color: #fff;
+}
+
+.secondary-bg {
+  background-color: $secondary;
+  color: #fff;
+}
+
+.success-bg {
+  background-color: $success;
+  color: #fff;
+}
+
+.warning-bg {
+  background-color: $warning;
+  color: #fff;
+}
+
+.danger-bg {
+  background-color: $danger;
+  color: #fff;
 }

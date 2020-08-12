@@ -1,13 +1,13 @@
-.charts-section{
+.charts-section {
+  @include grid-container(2em);
+  background-color: var(--blue-grey-700);
+  grid-template-columns: repeat(2, 1fr);
+  color: #fff;
+
+  .chart-details {
     @include grid-container(2em);
-    background-color: var(--blue-grey-700);
-    grid-template-columns: repeat(2,1fr);
-    color: #fff;
-    
-    .chart-details{
-        @include grid-container(2em);
-    }
-    .chart-cta{
-@extend .green-bg;
-    }
+  }
+  .chart-cta {
+    @extend .primary-bg;
+  }
 }

@@ -7,7 +7,7 @@
   .feature-icon {
     @extend .flex;
     justify-content: center;
-    @extend .green-highlight;
+    @extend .primary-highlight;
     // padding-right: 0.5em;
   }
   .feature-details {
@@ -15,7 +15,7 @@
     color: var(--grey-800);
   }
   .feature-cta {
-    @extend .green-highlight-2;
+    @extend .primary-highlight;
     // @extend .flex;
     align-items: center;
     transition: 0.4s ease-in-out;

@@ -19,7 +19,7 @@
       font-weight: 600;
       padding: 1.25em;
       @include border-radius(50%);
-      @extend .green-bg;
+      @extend .primary-bg;
     }
   }
   .hiw-step-details {
@@ -32,7 +32,7 @@
     .hiw-icon {
       @extend .flex-centered;
       font-size: 8rem;
-      @extend .green-highlight;
+      @extend .primary-highlight;
     }
     .hiw-lists {
       @include grid-container(0);

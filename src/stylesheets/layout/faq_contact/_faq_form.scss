@@ -41,7 +41,7 @@
       }
       .select-items {
         display: grid;
-        @extend .green-bg;
+        @extend .primary-bg;
       }
     }
     .custom-select-arrow {
@@ -98,14 +98,14 @@
       }
     }
     input[type="checkbox"]:checked ~ .checkmark {
-      @extend .green-bg;
+      @extend .primary-bg;
       &::before {
         @extend .flex-centered;
       }
     }
   }
   .submit-btn {
-    @extend .green-bg;
+    @extend .primary-bg;
   }
 }
 

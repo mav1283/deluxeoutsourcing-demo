@@ -14,7 +14,7 @@
       font-size: calc(3rem - 1vw);
     }
     h2 {
-      @extend .green-highlight;
+      @extend .primary-highlight;
       font-weight: 500;
       font-size: calc(2rem - 1vw);
     }
@@ -25,7 +25,7 @@
     }
   }
   .hero-cta-btn {
-    @extend .green-bg;
+    @extend .primary-bg;
   }
 }
 

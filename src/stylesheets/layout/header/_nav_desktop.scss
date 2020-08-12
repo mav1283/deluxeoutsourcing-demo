@@ -20,7 +20,7 @@
     transition: 0.4s ease-in-out;
 
     &:last-child {
-      @extend .green-bg;
+      @extend .primary-bg;
       border: none;
     }
     span.nav-icon {
@@ -28,7 +28,7 @@
       font-size: 1rem;
       margin-left: 1em;
       transform: rotate(90deg);
-      @extend .green-highlight;
+      @extend .primary-highlight;
     }
 
     span.nav-icon-front {
