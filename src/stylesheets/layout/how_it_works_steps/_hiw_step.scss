@@ -32,7 +32,7 @@
     .hiw-icon {
       @extend .flex-centered;
       font-size: 8rem;
-      @extend .primary-highlight;
+      @extend .warning-highlight;
     }
     .hiw-lists {
       @include grid-container(0);

@@ -1,7 +1,7 @@
 .charts-section {
   @include grid-container(2em);
   @extend .secondary-bg;
-  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
   color: #fff;
 
   .chart-details {
@@ -9,5 +9,17 @@
   }
   .chart-cta {
     @extend .primary-bg;
+  }
+}
+
+@media only screen and (min-width: 0) {
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .charts-section {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

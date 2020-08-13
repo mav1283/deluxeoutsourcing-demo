@@ -1,7 +1,7 @@
 .hiw-lists {
   li {
     @extend .flex;
-    @include border-bottom(1px, solid, var(--green-400));
+    @include border-bottom(1px, solid, var(--light-blue-700));
     @include two-sides-padded-container(1em, 0);
     align-items: center;
     svg {
