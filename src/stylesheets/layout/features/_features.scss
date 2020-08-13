@@ -1,14 +1,6 @@
 .features {
   @include grid-container(1px);
   background-color: var(--trans-dark-3);
-
-  //   div.feature {
-  //     // &:nth-child(2) {
-  //     //   @include border-left(1px, solid, var(--trans-dark-3));
-  //     //   @include border-right(1px, solid, var(--trans-dark-3));
-  //     // }
-
-  //   }
 }
 
 @media only screen and (min-width: 0px) {

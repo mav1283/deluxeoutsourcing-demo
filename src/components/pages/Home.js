@@ -30,7 +30,7 @@ function Home() {
       <Features features={features} />
       <Slider slides={slides} />
       <Infrastructure infrastructures={infrastuctures} />
-      {/* <Charts /> */}
+      <Charts />
       <HowItWorksSteps hiwsteps={hiwsteps} />
       <FAQcontact />
       <Certificates certificates={certificates} />

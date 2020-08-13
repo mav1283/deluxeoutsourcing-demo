@@ -5,9 +5,18 @@
   div {
     @extend .flex-centered;
   }
+  &:nth-child(even) {
+    .infra-icon {
+      @extend .primary-highlight;
+    }
+  }
+  &:nth-child(odd) {
+    .infra-icon {
+      @extend .warning-highlight;
+    }
+  }
   .infra-icon {
     font-size: 5rem;
-    @extend .primary-highlight;
     margin: 0;
     padding: 0;
   }

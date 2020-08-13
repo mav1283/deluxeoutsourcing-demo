@@ -7,7 +7,7 @@
   .feature-icon {
     @extend .flex;
     justify-content: center;
-    @extend .primary-highlight;
+    @extend .warning-highlight;
     // padding-right: 0.5em;
   }
   .feature-details {

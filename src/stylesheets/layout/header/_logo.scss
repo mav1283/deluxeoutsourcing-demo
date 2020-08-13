@@ -1,17 +1,17 @@
-.app-logo{
-    @include grid-container(1em);
-    @include two-sides-padded-container(2em,1.5em);
-    grid-template-columns: auto auto;
-    align-items: center;
-    text-transform: uppercase;
-    color: var(--grey-800);
-    a{
-        font-size: 1.5rem;
-        
-    }
+.app-logo {
+  @include grid-container(1em);
+  @include two-sides-padded-container(2em, 1.5em);
+  grid-template-columns: auto auto;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--grey-800);
+  a {
+    font-size: 1.5rem;
+  }
+  span.warning-highlight {
     font-weight: 300;
-    span{
-        font-weight: 800;
-    }
-
+  }
+  span {
+    font-weight: 800;
+  }
 }

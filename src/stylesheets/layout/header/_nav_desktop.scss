@@ -22,6 +22,9 @@
     &:last-child {
       @extend .primary-bg;
       border: none;
+      &:hover {
+        @extend .warning-bg;
+      }
     }
     span.nav-icon {
       transition: inherit;

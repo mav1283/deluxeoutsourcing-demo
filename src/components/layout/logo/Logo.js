@@ -6,7 +6,8 @@ function Logo() {
   return (
     <div className="app-logo">
       <Link to="/">
-        <span className="primary-highlight">delux</span>outsourcing
+        <span className="primary-highlight">delux</span>
+        <span className="warning-highlight">outsourcing</span>
       </Link>
       <NavmenuButton />
     </div>

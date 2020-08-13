@@ -12,6 +12,7 @@
   .head-bottom-section {
     @include grid_container(0);
     // // grid-template-columns: auto 1fr;
+    @include border-bottom(2px, solid, var(--orange-600));
   }
 }
 
@@ -36,4 +37,3 @@
     }
   }
 }
-

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function FeatureItem({
   feature_icon,
@@ -9,14 +9,14 @@ function FeatureItem({
   feature_cta,
 }) {
   return (
-    <div className='feature'>
-      <div className='feature-icon'>{feature_icon}</div>
-      <div className='feature-details'>
-        <h2 className='feature-tite'>{feature_title}</h2>
-        <p className='feature-description'>{feature_description}</p>
-        <Link to={`/${feature_url}`} className='feature-cta'>
+    <div className="feature">
+      <div className="feature-icon">{feature_icon}</div>
+      <div className="feature-details">
+        <h2 className="feature-title">{feature_title}</h2>
+        <p className="feature-description">{feature_description}</p>
+        <Link to={`/${feature_url}`} className="feature-cta">
           {feature_cta}
-          <span className='feature-cta-icon'>&#10095;</span>
+          <span className="feature-cta-icon">&#10095;</span>
         </Link>
       </div>
     </div>
