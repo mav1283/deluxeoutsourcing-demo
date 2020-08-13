@@ -1,6 +1,6 @@
 .faq-contact {
   @include grid-container(4em);
-  background: var(--blue-grey-700);
+  @extend .secondary-bg;
   justify-content: center;
   div {
     max-width: 768px;

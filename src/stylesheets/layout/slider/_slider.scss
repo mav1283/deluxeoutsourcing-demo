@@ -1,7 +1,7 @@
 .slider {
   position: relative;
   display: block;
-  background: var(--blue-grey-700);
+  @extend .secondary-bg;
   @extend .flex-centered;
   min-height: 100%;
   .slider-buttons {

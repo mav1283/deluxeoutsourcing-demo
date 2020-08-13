@@ -1,6 +1,6 @@
 .charts-section {
   @include grid-container(2em);
-  background-color: var(--blue-grey-700);
+  @extend .secondary-bg;
   grid-template-columns: repeat(2, 1fr);
   color: #fff;
 
