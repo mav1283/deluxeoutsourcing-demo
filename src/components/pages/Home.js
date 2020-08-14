@@ -5,7 +5,7 @@ import bgImage from "../../assets/images/austin-distel-97HfVpyNR1M-unsplash.jpg"
 import Features from "../layout/section_templates/Features";
 import Slider from "../layout/section_templates/Slider";
 import Infrastructure from "../layout/section_templates/Infrastructure";
-import Charts from "../layout/section_templates/Charts";
+// import Charts from "../layout/section_templates/Charts";
 import HowItWorksSteps from "../layout/section_templates/HoItWorksSteps";
 import FAQcontact from "../layout/section_templates/FAQcontact";
 import Certificates from "../layout/section_templates/Certificates";
@@ -30,7 +30,7 @@ function Home() {
       <Features features={features} />
       <Slider slides={slides} />
       <Infrastructure infrastructures={infrastuctures} />
-      <Charts />
+      {/* <Charts /> */}
       <HowItWorksSteps hiwsteps={hiwsteps} />
       <FAQcontact />
       <Certificates certificates={certificates} />
